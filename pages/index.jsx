@@ -21,6 +21,7 @@ export default function Home() {
       const response = await axios.get(weatherURL);
       setWeather(response.data);
       console.log(response.data);
+      console.info("SECRET KEY", process.env.NEXT_PUBLIC_WEATHER_API_KEY);
     } catch (error) {
       console.log(error);
     }
