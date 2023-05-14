@@ -11,7 +11,7 @@ export default function Home() {
   const [weather, setWeather] = useState(null);
 
   const weatherAPI = process.env.NEXT_PUBLIC_WEATHER_KEY;
-  const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherAPI}&units=metric`;
+  const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.NEXT_PUBLIC_WEATHER_KEY}&units=metric`;
 
   const fetchWeatherData = async (e) => {
     e.preventDefault();
