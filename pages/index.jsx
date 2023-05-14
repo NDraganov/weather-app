@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react";
 import Head from "next/head";
+import Weather from "@/components/weather";
 import axios from "axios";
 
 import classes from "./index.module.css";
@@ -42,6 +43,8 @@ export default function Home() {
               <button onClick={fetchWeatherData}>search</button>
             </div>
           </div>
+          {/* Weather content */}
+          {weather && <Weather data={weather} />}
         </div>
       </div>
     </Fragment>
