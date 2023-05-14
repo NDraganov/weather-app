@@ -10,11 +10,8 @@ export default function Home() {
   const [city, setCity] = useState("");
   const [weather, setWeather] = useState(null);
 
-  const weatherAPI = process.env.NEXT_PUBLIC_WEATHER_API;
-  const weatherURL =
-    `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=` +
-    weatherAPI +
-    `&units=metric`;
+  const weatherAPI = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
+  const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherAPI}&units=metric`;
 
   const fetchWeatherData = async (e) => {
     e.preventDefault();
