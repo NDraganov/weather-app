@@ -2,6 +2,7 @@ import { Fragment, useState } from "react";
 import Head from "next/head";
 import Weather from "@/components/weather";
 import axios from "axios";
+import { AiOutlineSearch } from "react-icons/ai";
 
 import classes from "./index.module.css";
 
@@ -40,7 +41,9 @@ export default function Home() {
                 placeholder="SEARCH CITY"
                 onChange={(e) => setCity(e.target.value)}
               />
-              <button onClick={fetchWeatherData}>search</button>
+              <button onClick={fetchWeatherData}>
+                <AiOutlineSearch />
+              </button>
             </div>
           </div>
           {/* Weather content */}
