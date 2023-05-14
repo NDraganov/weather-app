@@ -59,3 +59,12 @@
 .input button svg:hover {
   color: var(--dark-blue);
 }
+
+@media screen and (max-width: 450px) {
+  .input h2 {
+    margin-top: 7rem;
+  }
+  .input div {
+    width: 80vw;
+  }
+}
