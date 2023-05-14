@@ -1,1 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
 
+* {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark-navy: #0a2647;
+  --dark-blue: #0a4d68;
+  --blue: #19a7ce;
+  --light-blue: #05bfdb;
+  --mint: #00ffca;
+  --light-yellow: #fff7d4;
+  --light-grey: #f6f1e9;
+}
+html {
+  height: 100%;
+}
+body {
+  font-family: "Oxygen", sans-serif;
+  background: linear-gradient(
+    to bottom,
+    var(--blue),
+    var(--light-blue),
+    var(--mint)
+  );
+}
