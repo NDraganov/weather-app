@@ -1,4 +1,4 @@
-import { Fragment, useState } from "react";
+import React, { Fragment, useState } from "react";
 import Head from "next/head";
 import Weather from "@/components/weather";
 import axios from "axios";
