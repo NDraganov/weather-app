@@ -17,14 +17,15 @@ export default function Home() {
   const fetchWeatherData = async (e) => {
     e.preventDefault();
     setLoading(true);
-    try {
-      const response = await axios.get(weatherURL);
-      setWeather(response.data);
-      console.log(response.data);
-      console.info("SECRET KEY", process.env.NEXT_PUBLIC_WEATHER_API_KEY);
-    } catch (error) {
-      console.log(error);
-    }
+    const response = await axios
+      .get(weatherURL)
+      .then((response) => {
+        setWeather(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    setCity("");
     setLoading(false);
   };
 
