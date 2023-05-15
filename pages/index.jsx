@@ -12,7 +12,6 @@ export default function Home() {
   const [loading, setLoading] = useState(false);
 
   const weatherAPI = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
-  console.log(weatherAPI);
   const weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${weatherAPI}&units=metric`;
 
   const fetchWeatherData = async (e) => {
