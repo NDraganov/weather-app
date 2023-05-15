@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import Head from "next/head";
-import Weather from "@/components/weather";
+import Loader from "@/components/loader/loader";
+import Weather from "@/components/weather/weather";
 import axios from "axios";
 import { AiOutlineSearch } from "react-icons/ai";
 
@@ -30,7 +31,7 @@ export default function Home() {
   };
 
   if (loading) {
-    return <h1>Loading ...</h1>;
+    return <Loader />;
   } else {
     return (
       <Fragment>
