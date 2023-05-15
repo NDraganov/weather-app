@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: var(--blue);
+  padding: 0.5rem 1rem;
+}
+.header svg {
+  color: var(--light-grey);
+  font-size: 3.5rem;
+}
+.header h2 {
+  color: var(--light-grey);
+}
