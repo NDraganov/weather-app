@@ -30,6 +30,12 @@ export default function Home() {
     setLoading(false);
   };
 
+  const pressEnter = async (e) => {
+    if (e.keyCode === 13) {
+      await fetchWeatherData(e);
+    }
+  };
+
   if (loading) {
     return <Loader />;
   } else {
@@ -51,6 +57,7 @@ export default function Home() {
                   title="Enter a city"
                   placeholder="SEARCH CITY"
                   onChange={(e) => setCity(e.target.value)}
+                  onKeyDown={pressEnter}
                 />
                 <button title="Search" onClick={fetchWeatherData}>
                   <AiOutlineSearch />
