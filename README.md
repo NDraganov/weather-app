@@ -21,12 +21,12 @@ HelioStorm is a weather app website displaying the basic parameters for the chos
 
 ### Screenshots
 
-![Desktop](./public/images/desktop.png "Desktop")
+![Desktop|100x100](./public/images/desktop.png "Desktop")
 ![Desktop-data](./public/images/desktop-data.png "Desktop-data")
 ![Desktop-bottom](./public/images/desktop-bottom.png "Desktop-bottom")
-![Mobile](./public/images/mobile.png "Mobile")
-![Mobile-data](./public/images/mobile-data.png "Mobile-data")
-![Mobile-bottom](./public/images/mobile-bottom.png "Mobile-bottom")
+<img src="./public/images/mobile.png" alt="mobile" width="300" height="500"/>
+<img src="./public/images/mobile-data.png" alt="mobile-data" width="300" height="500"/>
+<img src="./public/images/mobile-bottom.png" alt="mobile-bottom" width="300" height="500"/>
 
 ### Links
 
