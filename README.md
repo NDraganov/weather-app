@@ -42,7 +42,7 @@ HelioStorm is a weather app website displaying the basic parameters for the chos
 - CSS with the grid and the flex
 - React icons
 
-### What I learn
+### What I've learned
 
 With this project, I learn how to use “Axios” to fetch the data with a promise
 
@@ -62,6 +62,12 @@ const fetchWeatherData = async (e) => {
   setLoading(false);
 };
 ```
+
+### Errors/Bugs
+
+When I deployed my project and tried to enter a city, the console threw me an error: "Axios: BadRequest; code 401" with the Open Weather Map Unauthorized API key. The API key in the URL was "undefined".
+
+I thought my environmental variable code was wrong because if the key was hard-coded, there was no issue. When I tried to use the website later, it worked. I know the API key needs some time to be activated. I got the key about two months ago, so I suppose the activation starts at the moment of deployment.
 
 ## Deployment
 
