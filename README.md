@@ -39,6 +39,7 @@ HelioStorm is a weather app website displaying the basic parameters for the chos
 
 - Next.js
 - Axios for helping me with the fetching data
+- Open Weather Map API key
 - CSS with the grid and the flex
 - React icons
 
