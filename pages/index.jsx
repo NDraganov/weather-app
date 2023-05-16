@@ -48,10 +48,11 @@ export default function Home() {
                 <input
                   type="text"
                   value={city}
+                  title="Enter a city"
                   placeholder="SEARCH CITY"
                   onChange={(e) => setCity(e.target.value)}
                 />
-                <button onClick={fetchWeatherData}>
+                <button title="Search" onClick={fetchWeatherData}>
                   <AiOutlineSearch />
                 </button>
               </div>
